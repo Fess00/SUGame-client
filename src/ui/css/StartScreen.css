@@ -1,0 +1,79 @@
+  
+  .logo-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; 
+    aspect-ratio: 2 / 1;
+    background: radial-gradient(137.61% 137.2% at 26.3% 28.87%, #BC2B2B 8.49%, #DD3232 53.81%, rgba(255, 255, 255, 0.56) 57.62%, #CF3C3C 61.59%, #811F1F 84%);
+    border-radius: 50%;
+    border: 1px solid #D62626;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+  
+  .text {
+    position: absolute;
+    font-family: 'Elan-Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, #CCCCCC 23.5%, #FFFFFF 55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .top-text {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .bottom-text {
+    font-size: 40px;
+  }
+
+  @media (max-width: 768px) {
+    .text {
+        font-size: 10vw;
+    }
+
+    .top-text {
+        font-size: 5vw;
+    }
+
+    .bottom-text {
+        font-size: 10vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container {
+        max-width: 200px;
+    }
+
+    .text {
+        font-size: 12vw;
+    }
+
+    .top-text {
+        font-size: 6vw;
+    }
+
+    .bottom-text {
+        font-size: 12vw;
+    }
+}
